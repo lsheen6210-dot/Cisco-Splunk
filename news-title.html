@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: transparent; font-family: 'Segoe UI', sans-serif; }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0d1117;
+  }
+  span { color: #e4640a; }
+</style>
+</head>
+<body>
+<h2 id="title"></h2>
+<script>
+  const d = new Date();
+  const month = d.toLocaleString('default', { month: 'long' });
+  const year = d.getFullYear();
+  document.getElementById('title').innerHTML = month + ' ' + year + ' <span>News</span>';
+</script>
+</body>
+</html>
